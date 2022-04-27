@@ -1,6 +1,7 @@
 //To Do: Create an application that will deploy local breweries and reviews
 
 //Get html elements and make into variables
+var breweryEl = // need a query selector to apply this variable to
 
 //create a function to fetch the brewery api
 function getBreweryName(event) {
@@ -18,10 +19,10 @@ function getBreweryName(event) {
 
 //Create elements to display the brewery then put in the data and then append 
 function displayBreweries(data) {
-    weatherEl.innerHTML = ""
+    breweryEl.innerHTML = ""
 
     var header = document.createElement('h5')
-    //breweryEl.append(header)
+    breweryEl.append(header)
 }
 
 //create function to fetch yelp api 
