@@ -147,3 +147,23 @@ button:hover {
 .my-input-container2 > img {
   padding: 0 0 0 20px;
 }
+
+.brewery-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.beer-coaster > div > img {
+  width: 100px;
+  transition: 0.3s;
+  border-radius: 5px;
+  border: 5px;
+  padding: 45px;
+  background-color: goldenrod;
+  border-color: black;
+}
+
+.beer-coaster > div > img:hover {
+  width: 110px;
+}
