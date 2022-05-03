@@ -18,7 +18,8 @@ a:hover {
 /*sets the about me and contact anchor tags to the right */
 nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   background-color: goldenrod;
 }
 
@@ -66,6 +67,7 @@ h1 {
   border-radius: 20px;
 }
 
+
 .my-input-container:hover {
   box-shadow: 0 0 10px 0 gainsboro;
 }
@@ -80,6 +82,7 @@ h1 {
 .my-input-container > img {
   padding: 0 0 0 20px;
 }
+
 
 img {
   cursor: pointer;
