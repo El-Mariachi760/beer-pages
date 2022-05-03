@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,42 +7,40 @@
     <title>Beer O'Clock</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
     <header>
         <nav>
             <ul class="header-nav">
                 <img class="header-img" src="./assets/icons/open-iconic-master/svg/book.svg">
                 <a href="#">About</a>
-
             </ul>
-
             <ul class="header-nav">
                 <img class="header-img" src="./assets/icons/open-iconic-master/svg/phone.svg">
                 <a href="#">Contact</a>
-
-
             </ul>
         </nav>
     </header>
-
-
     <section>
         <div class="beer-logo">
-
-          <h1>Beer O'Clock</h1>
             <img class="logo" src="./assets/beer-svgrepo-com.svg">
             <h1>Beer O'Clock</h1>
         </div>
         <div class="my-input-container">
             <img src="./assets/icons/open-iconic-master/svg/magnifying-glass.svg">
-            <input type="text">
+            <input type="text" id="search-bar">
         </div>
-        <div class="search-button">
-            <button>Search</button>
+        <div>
+            <button id="search-button">Search</button>
+        </div>
+        <div id="breweries">
+            <ul id="list"></ul>
+        </div>
+        <div id="weather">
+            <ul id="list2"></ul>
         </div>
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
