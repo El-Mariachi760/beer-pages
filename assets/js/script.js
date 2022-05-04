@@ -47,7 +47,7 @@ function getBreweryName() {
 var getWeather = function(){
     var cityName = searchBarEl.value
     console.log(cityName)
-    var apiURL = `https://metaweather.com/api/location/search/?q=${cityName}`
+    var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`
 
     console.log(apiURL)
     fetch(apiURL)
