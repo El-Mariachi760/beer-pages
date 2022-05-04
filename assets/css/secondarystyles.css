@@ -1,4 +1,4 @@
-/* input container for 2nd and 3rd webpages */
+/* input container for 2nd and 3rd webpages
 header {
     display: fill;
 }
@@ -10,7 +10,6 @@ header {
     height: flex;
     border: 1px solid gainsboro;
     border-radius: 10px;
-    content: fill;
   }
   
   .search-bar input {
@@ -31,7 +30,37 @@ header {
     color: rgb(252, 247, 238);
     text-shadow: 2px 2px 4px #000000;
     font-size: 40px;
-    /* margin-left: 10%; */
+    /* margin-left: 10%; 
+  } */
+
+  /* styling for created elements with the script.js */
+
+  .beer-coaster > div {
+    width: 100px;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: 5px;
+    padding: 45px;
+    background-color: goldenrod;
+    border-color: black;
+    list-style: none;
+  }
+
+  .beer-coaster h3 {
+    color: gainsboro;
+    text-shadow: 2px 2px 4px #000000;
   }
   
+  .beer-coaster > div:hover {
+    width: 110px;
+  }
+  button {
+    background-color: transparent;
+  }
   
+  .beer-coaster div ul li {
+    list-style: none;
+  }
+  ul {
+    list-style-type: none;
+  }

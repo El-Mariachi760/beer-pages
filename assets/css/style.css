@@ -18,7 +18,7 @@ a:hover {
 /*sets the about me and contact anchor tags to the right */
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: goldenrod;
 }
 
@@ -34,6 +34,7 @@ nav {
 ul > a,
 ul > img {
   padding: 0 8px;
+  list-style: none;
 }
 
 .header-img:hover {
@@ -162,7 +163,20 @@ button:hover {
   justify-content: center;
 }
 
-.beer-coaster > div > img {
+/*.beer-coaster > div{
+  width: 100px;
+  transition: 0.3s;
+  border-radius: 50px;
+  border: 5px;
+  padding: 45px;
+  background-color: goldenrod;
+  border-color: black; */
+  /* background-image: url("../beer-svgrepo-com.svg"); */
+
+/* }
+
+
+.beer-coaster{
   width: 100px;
   transition: 0.3s;
   border-radius: 50px;
@@ -170,8 +184,31 @@ button:hover {
   padding: 45px;
   background-color: goldenrod;
   border-color: black;
-}
+  position: relative;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
-.beer-coaster > div > img:hover {
+/* .beer-coaster{
+  
+  content: "";
+  background-image: url("../beer-svgrepo-com.svg");
+  background-size: cover;
+  position: absolute;
+  opacity: .75;
+} */
+
+/* .beer-coaster p {
+  color: white;
+} */ */
+
+button {
+  background-color: transparent;
+ 
+}
+.beer-coaster > div:hover {
   width: 110px;
 }

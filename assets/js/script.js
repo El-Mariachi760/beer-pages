@@ -8,6 +8,8 @@ var listItemEl = document.getElementById('list')
 var weatherEl = document.querySelector("weather")
 const apiKey = "82d466c6476a45fdadcc1da99e41ba61"
 
+// varable to add unique id to each list item
+var listItemCounter = 0;
 //create a function to fetch the brewery api
 function getBreweryName() {
     var cityName = searchBarEl.value
@@ -20,14 +22,21 @@ function getBreweryName() {
     })
     .then(function(data) {
         for (var i = 0; i < 5; i++) {
-            // Create a list element
+            // Create a list element+
             var listItem = document.createElement('li');
+            // add class to 'li' element
+            listItem.className = "beer-coaster"
+            // create unique Ids for list items
+            listItem.id = 'list' + listItemCounter++;
+            // to add a div and provide innerhtml with search results
+            var listItemResult = document.createElement('div')
             //set text of li into json response
-            listItem.textContent = data[i].name;
+            listItemResult.innerHTML = "<h3>" + data[i].name; + "</h3>";
             //append the li to the id
             listItemEl.appendChild(listItem);
+            listItem.appendChild(listItemResult);
     }
-    console.log(data[i].name);
+    console.log(data[i]);
 });
 }
 
