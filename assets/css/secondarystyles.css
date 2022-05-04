@@ -1,66 +1,41 @@
-/* input container for 2nd and 3rd webpages
-header {
-    display: fill;
+.beer-coaster > div {
+  width: 150px;
+  height: 150px;
+  transition: 0.3s;
+  border-radius: 50px;
+  border: 5px;
+  padding: 45px;
+  background-color: goldenrod;
+  border-color: black;
+  list-style: none;
+  background-image: url(/assets/beer-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 135px 135px;
+  background-position: 50%;
+  margin: 15px;
 }
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
-    height: flex;
-    border: 1px solid gainsboro;
-    border-radius: 10px;
-  }
-  
-  .search-bar input {
-    align-items: center;
-    padding: auto;
-    background-color: transparent;
-    flex-grow: 1;
-    border: none;
-    outline: none;
-  
-  }
-  
-  .search-bar button {
-    display: center;
-  }
-  
-  .center-header-text {
-    color: rgb(252, 247, 238);
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 40px;
-    /* margin-left: 10%; 
-  } */
+#list {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  /* styling for created elements with the script.js */
+.beer-coaster h3 {
+  font-size: 35px;
+  color: gainsboro;
+  text-shadow: 2px 2px 4px #000000;
+}
 
-  .beer-coaster > div {
-    width: 100px;
-    transition: 0.3s;
-    border-radius: 50px;
-    border: 5px;
-    padding: 45px;
-    background-color: goldenrod;
-    border-color: black;
-    list-style: none;
-  }
+.beer-coaster > div:hover {
+  opacity: 60%;
+}
+button {
+  background-color: transparent;
+}
 
-  .beer-coaster h3 {
-    color: gainsboro;
-    text-shadow: 2px 2px 4px #000000;
-  }
-  
-  .beer-coaster > div:hover {
-    width: 110px;
-  }
-  button {
-    background-color: transparent;
-  }
-  
-  .beer-coaster div ul li {
-    list-style: none;
-  }
-  ul {
-    list-style-type: none;
-  }
+.beer-coaster div ul li {
+  list-style: none;
+}
+ul {
+  list-style-type: none;
+}
