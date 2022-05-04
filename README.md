@@ -50,9 +50,9 @@ SO THAT I can easily plan what are the best breweries to go to.
   
 - Alex Hernandez &mdash; [github.com/el-mariachi760](https://github.com/el-mariachi760)
   
-- Scoot Moore &mdash; [github.com/](https://github.com/)
+- Scoot Moore &mdash; [github.com/ScottMooregithub](https://github.comScottMooregithub)
 
-- Michael Wooten &mdash; [github.com/](https://github.com/)
+- Michael Wooten &mdash; [github.com/MichaelWooten2402](https://github.comMichaelWooten2402)
 
 </details>
 
