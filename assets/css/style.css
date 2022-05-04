@@ -34,7 +34,6 @@ nav {
 ul > a,
 ul > img {
   padding: 0 8px;
-  list-style: none;
 }
 
 .header-img:hover {
@@ -65,6 +64,12 @@ h1 {
   height: 44px;
   border: 1px solid gainsboro;
   border-radius: 20px;
+}
+.my-input-container form {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
 }
 
 .my-input-container:hover {
@@ -137,6 +142,19 @@ button:hover {
   box-shadow: 0 0 10px 0 gainsboro;
 }
 
+
+
+form input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+}
+
+
+
 /* targets specific input element within class */
 .my-input-container2 > input {
   display: flex;
@@ -157,26 +175,13 @@ button:hover {
   padding: 0 0 0 20px;
 }
 
-.brewery-display {
+/* .brewery-display {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/*.beer-coaster > div{
-  width: 100px;
-  transition: 0.3s;
-  border-radius: 50px;
-  border: 5px;
-  padding: 45px;
-  background-color: goldenrod;
-  border-color: black; */
-  /* background-image: url("../beer-svgrepo-com.svg"); */
-
-/* }
-
-
-.beer-coaster{
+.beer-coaster > div > img {
   width: 100px;
   transition: 0.3s;
   border-radius: 50px;
@@ -184,31 +189,8 @@ button:hover {
   padding: 45px;
   background-color: goldenrod;
   border-color: black;
-  position: relative;
-  height: 80%;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .beer-coaster{
-  
-  content: "";
-  background-image: url("../beer-svgrepo-com.svg");
-  background-size: cover;
-  position: absolute;
-  opacity: .75;
-} */
-
-/* .beer-coaster p {
-  color: white;
-} */ */
-
-button {
-  background-color: transparent;
- 
 }
-.beer-coaster > div:hover {
+
+.beer-coaster > div > img:hover {
   width: 110px;
-}
+} */
