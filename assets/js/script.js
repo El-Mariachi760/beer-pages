@@ -6,7 +6,7 @@ var searchBarEl = document.getElementById("search-bar")
 var breweryDisplayEL = document.getElementById("breweries")
 var listItemEl = document.getElementById('list')
 var weatherEl = document.getElementById("weather")
-const apiKey = "82d466c6476a45fdadcc1da99e41ba61"
+
 
 // varable to add unique id to each list item
 var listItemCounter = 0;
@@ -41,31 +41,33 @@ function getBreweryName() {
 }
 
 //create a function to fetch the open weather api
-var getWeather = function(){
-    var cityName = searchBarEl.value
-    console.log(cityName)
-    var apiURL = `https://metaweather.com/api/location/search/?q=${cityName}`
 
-    fetch(apiURL)
-    
-    .then(function(response) {
+var cityName = searchBarEl.value
+const options = {
+    method: 'GET',
+	headers: {
+        'X-RapidAPI-Host': 'trueway-places.p.rapidapi.com',
+		'X-RapidAPI-Key': '44b122c511msh974f761987c7d71p158a01jsna426c9134bcd'
+	}
+};
+function getRestaurant(){
+    var restaurantCity = searchBarEl.value
+fetch(`https://trueway-places.p.rapidapi.com/FindPlacesNearby?location=${restaurantCity}&type=restaurant&radius=80&language=en&per_page10`, options)
+	.then(function(response) {
         return response.json();
    })
-
    .then(function(data) {
-     for(var i=0; i < data.length; i++){
-        var listItem = document.createElement('li');
-        listItem.id = 'list2' + listItemCounter++;
-     }
-       console.log(data[i]);
-});
-}
+       for (var i = 0; i < data.length ; i++) {
+        console.log(data[i]);
+    }
+})
+};
 
 
 function doBoth() {
    //preventDefault()
     getBreweryName()
-    getWeather()
+    getRestaurant()
 }
 
 searchButton.addEventListener("click", doBoth);
