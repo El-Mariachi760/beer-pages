@@ -1,7 +1,9 @@
 # Beer O'Clock
+
 A craft brewery search application
 
 ## Table of Contents
+
 <details>
 
   <summary>Contents</summary>
@@ -14,7 +16,7 @@ A craft brewery search application
 
 1.  [Website](#website)
 
-1.  [Contributions](#contributions) 
+1.  [Contributions](#contributions)
 
 1.  [Built With](#built-with)
 
@@ -34,10 +36,8 @@ SO THAT I can easily plan what are the best breweries to go to.
 
 ## Preview
 
-
-
 ## Website
-  
+
 [View Live Site](https://el-mariachi760.github.io/beer-pages/)
 
 ## Credits
@@ -57,6 +57,7 @@ SO THAT I can easily plan what are the best breweries to go to.
 </details>
 
 ## Built With
+
 ![html](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&logoWidth=30)
 ![css](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&logoWidth=30)
 ![js](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&logoWidth=30)

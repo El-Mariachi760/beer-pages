@@ -3,7 +3,6 @@
 var searchButton = document.getElementById("search-button");
 var searchBarEl = document.getElementById("search-bar");
 
-<<<<<<< HEAD
 var breweryDisplayEL = document.getElementById("breweries");
 var listItemEl = document.getElementById('list');
 var nameEl = document.getElementById('city');
@@ -11,12 +10,6 @@ var tempEl = document.getElementById('temp');
 var descEl = document.getElementById('desc');
 var weatherEl = document.querySelector("weather");
 const apiKey = "82d466c6476a45fdadcc1da99e41ba61";
-=======
-var breweryDisplayEL = document.getElementById("breweries")
-var listItemEl = document.getElementById('list')
-var weatherEl = document.getElementById("weather")
-const apiKey = "82d466c6476a45fdadcc1da99e41ba61"
->>>>>>> db2c1d0793fb31dc9a6a19b99a7c0000071f314f
 
 // varable to add unique id to each list item
 var listItemCounter = 0;
@@ -58,7 +51,6 @@ var getWeather = function(){
 
     console.log(apiURL)
     fetch(apiURL)
-<<<<<<< HEAD
     .then(response => response.json())
     .then(data => {
         var nameValue = data['name'];
@@ -112,21 +104,6 @@ var getWeather = function(){
 // }
 
 
-=======
-    
-    .then(function(response) {
-        return response.json();
-   })
-
-   .then(function(data) {
-     for(var i=0; i < data.length; i++){
-        var listItem = document.createElement('li');
-        listItem.id = 'list2' + listItemCounter++;
-     }
-       console.log(data[i]);
-});
-}
->>>>>>> db2c1d0793fb31dc9a6a19b99a7c0000071f314f
 
 
 function doBoth() {

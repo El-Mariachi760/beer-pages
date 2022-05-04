@@ -3,25 +3,21 @@ body {
   font-family: arial, sans-serif;
   font-size: 0.9em;
 }
-
 a {
   margin: 5px;
   text-decoration: none;
   color: black;
 }
-
 a:hover {
   box-shadow: 0 0 10px 0 gainsboro;
   text-decoration: underline;
 }
-
 /*sets the about me and contact anchor tags to the right */
 nav {
   display: flex;
   justify-content: space-between;
   background-color: goldenrod;
 }
-
 /* This is to align the icons and text */
 .header-nav {
   display: flex;
@@ -29,18 +25,15 @@ nav {
   padding-left: 20px;
   margin-right: 10px;
 }
-
 /* targets any anchors, ul's and img's */
 ul > a,
 ul > img {
   padding: 0 8px;
 }
-
 .header-img:hover {
   box-shadow: 0 0 10px 0 gainsboro;
   border-radius: 20px;
 }
-
 /* allows us to stack items in section using flex-direction */
 section {
   display: flex;
@@ -48,14 +41,12 @@ section {
   align-items: center;
   margin-top: 15vh;
 }
-
 /* em stands for emphemeral unit” which is relative to the current font size */
 /* NEED TO ADD CUSTOM FONT CLASS LATER DOWN THE LINE TOO BLAND CURRENTLY */
 h1 {
   color: goldenrod;
   font-size: 5.5em;
 }
-
 .my-input-container {
   display: flex;
   align-items: center;
@@ -65,6 +56,7 @@ h1 {
   border: 1px solid gainsboro;
   border-radius: 20px;
 }
+<<<<<<< HEAD
 .my-input-container form {
   width: 100%;
   max-width: 700px;
@@ -72,30 +64,27 @@ h1 {
   align-items: center;
 }
 
+=======
+>>>>>>> fd2d84f19b844c8b0a15e2aca14ce5dbfd102d71
 .my-input-container:hover {
   box-shadow: 0 0 10px 0 gainsboro;
 }
-
 /* targets specific input element within class */
 .my-input-container > input {
   flex-grow: 1;
   border: none;
   outline: none;
 }
-
 .my-input-container > img {
   padding: 0 0 0 20px;
 }
-
 img {
   cursor: pointer;
   width: 15px;
 }
-
 .search-button {
   padding-top: 53px;
 }
-
 button {
   background-color: #f8f9fa;
   border-radius: 5px;
@@ -104,30 +93,25 @@ button {
   padding: 0 20px;
   margin: 0 4px;
 }
-
 button:hover {
   cursor: pointer;
   box-shadow: 0 0 10px 0 gainsboro;
 }
-
 .beer-logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   padding: 0 25px;
   width: 85px;
 }
-
 .section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0vh;
 }
-
 .my-input-container2 {
   display: flex;
   align-items: center;
@@ -137,10 +121,10 @@ button:hover {
   border: 1px solid gainsboro;
   border-radius: 30px;
 }
-
 .my-input-container2:hover {
   box-shadow: 0 0 10px 0 gainsboro;
 }
+<<<<<<< HEAD
 
 
 
@@ -155,6 +139,8 @@ form input {
 
 
 
+=======
+>>>>>>> fd2d84f19b844c8b0a15e2aca14ce5dbfd102d71
 /* targets specific input element within class */
 .my-input-container2 > input {
   display: flex;
@@ -166,14 +152,13 @@ form input {
   text-indent: 15px;
   color: black;
 }
-
 .my-input-container > input > ::placeholder {
   color: black;
 }
-
 .my-input-container2 > img {
   padding: 0 0 0 20px;
 }
+<<<<<<< HEAD
 
 /* .brewery-display {
   display: flex;
@@ -194,3 +179,5 @@ form input {
 .beer-coaster > div > img:hover {
   width: 110px;
 } */
+=======
+>>>>>>> fd2d84f19b844c8b0a15e2aca14ce5dbfd102d71
