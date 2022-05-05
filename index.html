@@ -26,16 +26,20 @@
             <h1>Beer O'Clock</h1>
         </div>
         <div class="my-input-container">
-            <img src="./assets/icons/open-iconic-master/svg/magnifying-glass.svg">
-            <input type="text" id="search-bar">
+            <form method="get" action="./pagetwo.html" >
+                <input type="search" name = "keyword" placeholder= "Search City" id="search-bar">
+                <button id="search-input">
+                    <img src="./assets/icons/open-iconic-master/svg/magnifying-glass.svg">
+                </button>
+            </form>
         </div>
         <div>
-            <button id="search-button">Search</button>
         </div>
         <div id="breweries">
             <ul id="list"></ul>
         </div>
         <div id="weather">
+            <h2 id="name"></h2>
             <ul id="list2"></ul>
         </div>
     </section>
