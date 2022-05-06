@@ -1,3 +1,79 @@
+/* background img and syles for body and nav bar */
+.pageTwo-bkg-img {
+  background-image: url("../images/wood-bkg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+
+}
+
+/* background img for nav-bar */
+.pageTwo-header-bkg-img {
+  padding: 20px 35px;
+  overflow: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url("../images/wood-bkg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+
+/* logo class for the second-page */
+.logo-secondPage {
+  padding: 0 10px;
+  width: 50px;
+}
+
+.beer-logo-secondPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.beer-logo-secondPage h2 {
+  color: goldenrod;
+  font-size: 3.5em;
+  text-shadow: 0 0 10px 0 gainsboro;
+  
+}
+
+/* nav search bar stylings */
+.search-bar-pageTwo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-right: 10px;
+  width: 200px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 30px;
+  margin-top: 4%;
+}
+
+.search-bar-pageTwo:hover {
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.search-bar-pageTwo input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 20px 14px;
+  font-size: 16px;
+  color: gainsboro;
+  height: 50%;
+  width: 60%;
+  height: auto;
+}
+
 .beer-coaster > div {
   width: 150px;
   height: 150px;
@@ -16,6 +92,7 @@
 }
 #list {
   justify-content: space-evenly;
+  margin-right: 5%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -41,7 +118,18 @@ ul {
 }
 
 .weather-items {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
   outline: none;
-  margin-right: 10px;
-  height: 80%;
+  margin-left: 10px;
+  width: 10%;
+  height: 25%;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 5px;
+  color: gainsboro;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 1%;
+
 }
