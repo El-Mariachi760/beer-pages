@@ -53,7 +53,7 @@ body {
 }
 
 ::placeholder {
-  color: #cac7ff;
+  color: gainsboro;
 }
 
 .search-bar button {
@@ -170,10 +170,11 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 350px;
+  /* width: 200px;
   height: 44px;
-  border: 1px solid gainsboro;
-  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 30px; */
 }
 .my-input-container2:hover {
   box-shadow: 0 0 10px 0 gainsboro;
@@ -185,9 +186,10 @@ button:hover {
   flex-grow: 1;
   border: none;
   outline: none;
-  background-color: goldenrod;
+  background-color: transparent;
   text-indent: 15px;
-  color: black;
+  font-size: 16px;
+  color: gainsboro;
 }
 .my-input-container > input > ::placeholder {
   color: black;
