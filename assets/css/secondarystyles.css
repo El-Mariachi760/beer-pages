@@ -39,3 +39,9 @@ button {
 ul {
   list-style-type: none;
 }
+
+.weather-items {
+  outline: none;
+  margin-right: 10px;
+  height: 80%;
+}
