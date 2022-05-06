@@ -1,7 +1,11 @@
 //To Do: Create an application that will deploy local breweries and reviews
 //Get html elements and make into variables
 var searchButton = document.getElementById("search-button");
+var searchBarTwoEl = document.getElementById("search-bar-two");
+var homeSearchButton = document.getElementById("home-search-button");
 var searchBarEl = document.getElementById("search-bar");
+var homeSearchBar = document.getElementById("home-search-bar");
+
 
 var breweryDisplayEL = document.getElementById("breweries");
 var listItemEl = document.getElementById('list');
@@ -11,11 +15,15 @@ var descEl = document.getElementById('desc');
 var weatherEl = document.querySelector("weather");
 const apiKey = "82d466c6476a45fdadcc1da99e41ba61";
 
+
+
 // varable to add unique id to each list item
 var listItemCounter = 0;
 //create a function to fetch the brewery api
 function getBreweryName() {
-    var cityName = searchBarEl.value
+    debugger;
+
+    var cityName = searchBarTwoEl.value
     console.log(cityName)
     var getBreweryUrl = `https://api.openbrewerydb.org/breweries?by_city=${cityName}`
 
@@ -34,7 +42,7 @@ function getBreweryName() {
             // to add a div and provide innerhtml with search results
             var listItemResult = document.createElement('div')
             //set text of li into json response
-            listItemResult.innerHTML = "<h3>" + data[i].name; + "</h3>";
+            listItemResult.innerHTML = "<h3>" + data[i].name + "</h3>";
             //append the li to the id
             listItemEl.appendChild(listItem);
             listItem.appendChild(listItemResult);
@@ -45,7 +53,7 @@ function getBreweryName() {
 
 //create a function to fetch the open weather api
 var getWeather = function(){
-    var cityName = searchBarEl.value
+    var cityName = searchBarTwoEl.value
     console.log(cityName)
     var apiURL = `https://api.openweathermap.org/data/2.5/weather?units=imperial&q=${cityName}&appid=${apiKey}`
 
@@ -104,12 +112,27 @@ var getWeather = function(){
 // }
 
 
-
-
-function doBoth() {
-   //preventDefault()
+function doBoth() {    
     getBreweryName()
     getWeather()
 }
 
-searchButton.addEventListener("click", doBoth);
+
+// this is to get values from the page 2 URL 
+function getParameterByName () {
+    debugger
+    // var city = searchBarEl.value
+    var searchWork = document.location.search
+    console.log(searchWork);
+    var city = searchWork.replace(/\+/g, ' ');
+    cityName = city.split('=')[1] 
+
+    // var searchResult
+    console.log (cityName);
+    doBoth(cityName);
+}
+
+getParameterByName ()
+
+searchButton.addEventListener('click', doBoth)
+
