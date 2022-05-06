@@ -3,10 +3,77 @@ body {
   font-family: arial, sans-serif;
   font-size: 0.9em;
 }
+/* background image for main page */
+.background-img {
+  background-image: url("../images/beer-glass-bkg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+
+}
+
+/* background img for nav-bar */
+.header-bkg-img {
+  background-image: url("../images/beer-glass-bkg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* styles for search bar and it's contents */
+.search-bar {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 20px 14px;
+  font-size: 20px;
+  color: #cac7ff;
+  height: 50%;
+}
+
+.search-bar button img {
+  width: 25px;
+}
+
+::placeholder {
+  color: #cac7ff;
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  
+}
+
+.search-bar:hover {
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+
 a {
   margin: 5px;
   text-decoration: none;
-  color: black;
+  color: goldenrod;
+  font-size: 16px;
 }
 a:hover {
   box-shadow: 0 0 10px 0 gainsboro;
@@ -16,7 +83,6 @@ a:hover {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: goldenrod;
 }
 /* This is to align the icons and text */
 .header-nav {
@@ -30,6 +96,7 @@ ul > a,
 ul > img {
   padding: 0 8px;
 }
+
 .header-img:hover {
   box-shadow: 0 0 10px 0 gainsboro;
   border-radius: 20px;
@@ -46,6 +113,7 @@ section {
 h1 {
   color: goldenrod;
   font-size: 5.5em;
+  text-shadow: 0 0 10px 0 gainsboro;
 }
 .my-input-container {
   display: flex;
@@ -53,11 +121,7 @@ h1 {
   justify-content: space-between;
   width: 600px;
   height: 44px;
-  border: 1px solid gainsboro;
-  border-radius: 20px;
-}
-.my-input-container:hover {
-  box-shadow: 0 0 10px 0 gainsboro;
+
 }
 /* targets specific input element within class */
 .my-input-container > input {

@@ -120,7 +120,6 @@ function doBoth() {
 
 // this is to get values from the page 2 URL 
 function getParameterByName () {
-    debugger
     // var city = searchBarEl.value
     var searchWork = document.location.search
     console.log(searchWork);
