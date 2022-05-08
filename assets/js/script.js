@@ -81,3 +81,9 @@ function doBoth(event) {
 }
 
 searchButton.addEventListener('click', doBoth)
+
+var clear = document.querySelector("#clearCities");
+clear.addEventListener("click", function () {
+    localStorage.clear();
+    location.reload();
+});
