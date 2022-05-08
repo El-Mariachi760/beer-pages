@@ -37,7 +37,7 @@ body {
   padding: 10px 20px;
 }
 
-.search-bar input {
+.search-bar button {
   background: transparent;
   flex: 1;
   border: 0;
@@ -46,10 +46,6 @@ body {
   font-size: 20px;
   color: #cac7ff;
   height: 50%;
-}
-
-.search-bar button img {
-  width: 25px;
 }
 
 ::placeholder {
@@ -149,8 +145,8 @@ button {
 }
 button:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px 0 gainsboro;
 }
+
 .beer-logo {
   display: flex;
   align-items: center;
