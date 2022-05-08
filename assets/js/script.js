@@ -28,10 +28,11 @@ function getBreweryName() {
     
     fetch(getBreweryUrl)
     .then(function(response) {
-         return response.json();
+        return response.json();
     })
     .then(function(data) {
         for (var i = 0; i < 9; i++) {
+
             // Create a list element+
             var listItem = document.createElement('li');
             // add class to 'li' element
@@ -73,8 +74,7 @@ var getWeather = function(){
 
 };
 
-function doBoth(event) { 
-    //event.preventDefault()   
+function doBoth() { 
     getBreweryName()
     getWeather()
     
@@ -82,8 +82,13 @@ function doBoth(event) {
 
 searchButton.addEventListener('click', doBoth)
 
+
+
 var clear = document.querySelector("#clearCities");
 clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
+
+
+
